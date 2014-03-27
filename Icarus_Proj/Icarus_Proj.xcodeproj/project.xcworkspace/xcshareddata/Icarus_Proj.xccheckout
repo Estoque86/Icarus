@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CCBEAFBA-F2D3-43D2-9001-AFF60DAE3B15</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Icarus_Proj</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>10DB6BCB-2DAB-4EDA-BDA1-E1956C9B245E</key>
+		<string>ssh://github.com/Estoque86/Icarus.git</string>
+		<key>917A27EE-CD9E-44E8-B5D7-E7E676397F9F</key>
+		<string>ssh://github.com/Estoque86/Icaus_New.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Icarus_Proj/Icarus_Proj.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>10DB6BCB-2DAB-4EDA-BDA1-E1956C9B245E</key>
+		<string>../../..</string>
+		<key>917A27EE-CD9E-44E8-B5D7-E7E676397F9F</key>
+		<string>../../../../Icarus_New</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/Estoque86/Icarus.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>10DB6BCB-2DAB-4EDA-BDA1-E1956C9B245E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>10DB6BCB-2DAB-4EDA-BDA1-E1956C9B245E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Icarus</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>917A27EE-CD9E-44E8-B5D7-E7E676397F9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Icarus_New</string>
+		</dict>
+	</array>
+</dict>
+</plist>

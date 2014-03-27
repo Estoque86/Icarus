@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		D1ACB5D218C9358300100EFB /* config.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		D1ACB5D418C9358300100EFB /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		D1ACB5D618C9358300100EFB /* conf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = conf.py; sourceTree = "<group>"; };
+		D1ACB5D718C9358300100EFB /* index.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = index.rst; sourceTree = "<group>"; };
+		D1ACB5D918C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5DB18C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5DC18C9358300100EFB /* collectors.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = collectors.py; sourceTree = "<group>"; };
+		D1ACB5DD18C9358300100EFB /* engine.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = engine.py; sourceTree = "<group>"; };
+		D1ACB5DE18C9358300100EFB /* network.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = network.py; sourceTree = "<group>"; };
+		D1ACB5E018C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5E118C9358300100EFB /* cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cache.py; sourceTree = "<group>"; };
+		D1ACB5E218C9358300100EFB /* strategy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = strategy.py; sourceTree = "<group>"; };
+		D1ACB5E418C9358300100EFB /* test_cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_cache.py; sourceTree = "<group>"; };
+		D1ACB5E518C9358300100EFB /* test_strategy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_strategy.py; sourceTree = "<group>"; };
+		D1ACB5E618C9358300100EFB /* orchestration.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = orchestration.py; sourceTree = "<group>"; };
+		D1ACB5E718C9358300100EFB /* registry.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = registry.py; sourceTree = "<group>"; };
+		D1ACB5E918C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5EA18C9358300100EFB /* plot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plot.py; sourceTree = "<group>"; };
+		D1ACB5EB18C9358300100EFB /* readwrite.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = readwrite.py; sourceTree = "<group>"; };
+		D1ACB5ED18C9358300100EFB /* test_resultset.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_resultset.py; sourceTree = "<group>"; };
+		D1ACB5EE18C9358300100EFB /* run.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run.py; sourceTree = "<group>"; };
+		D1ACB5F018C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5F118C9358300100EFB /* cacheplacement.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cacheplacement.py; sourceTree = "<group>"; };
+		D1ACB5F218C9358300100EFB /* contentplacement.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = contentplacement.py; sourceTree = "<group>"; };
+		D1ACB5F318C9358300100EFB /* topology.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = topology.py; sourceTree = "<group>"; };
+		D1ACB5F418C9358300100EFB /* workload.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = workload.py; sourceTree = "<group>"; };
+		D1ACB5F618C9358300100EFB /* test_util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_util.py; sourceTree = "<group>"; };
+		D1ACB5F818C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB5F918C9358300100EFB /* cacheperf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cacheperf.py; sourceTree = "<group>"; };
+		D1ACB5FA18C9358300100EFB /* stats.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = stats.py; sourceTree = "<group>"; };
+		D1ACB5FC18C9358300100EFB /* test_cacheperf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_cacheperf.py; sourceTree = "<group>"; };
+		D1ACB5FD18C9358300100EFB /* test_stats.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_stats.py; sourceTree = "<group>"; };
+		D1ACB5FE18C9358300100EFB /* test_traces.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_traces.py; sourceTree = "<group>"; };
+		D1ACB5FF18C9358300100EFB /* traces.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = traces.py; sourceTree = "<group>"; };
+		D1ACB60018C9358300100EFB /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		D1ACB60118C9358300100EFB /* icarus.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = icarus.py; sourceTree = "<group>"; };
+		D1ACB60218C9358300100EFB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D1ACB60318C9358300100EFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D1ACB60718C9358300100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB60818C9358300100EFB /* analysis.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = analysis.py; sourceTree = "<group>"; };
+		D1ACB60918C9358300100EFB /* cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cache.py; sourceTree = "<group>"; };
+		D1ACB60A18C9358300100EFB /* config.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		D1ACB60B18C9358300100EFB /* logging.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = logging.py; sourceTree = "<group>"; };
+		D1ACB60C18C9358300100EFB /* plot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plot.py; sourceTree = "<group>"; };
+		D1ACB60D18C9358300100EFB /* run.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run.py; sourceTree = "<group>"; };
+		D1ACB60E18C9358300100EFB /* scenario.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scenario.py; sourceTree = "<group>"; };
+		D1ACB60F18C9358300100EFB /* strategy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = strategy.py; sourceTree = "<group>"; };
+		D1ACB61018C9358300100EFB /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		D1ACB61118C9358300100EFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D1ACB61218C9358300100EFB /* reproduce_results.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reproduce_results.sh; sourceTree = "<group>"; };
+		D1ACB61518C9358300100EFB /* 3257.r0.cch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3257.r0.cch; sourceTree = "<group>"; };
+		D1ACB61618C9358300100EFB /* 7018.r0.cch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 7018.r0.cch; sourceTree = "<group>"; };
+		D1ACB61718C9358300100EFB /* DeutscheTelekom.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DeutscheTelekom.graphml; sourceTree = "<group>"; };
+		D1ACB61818C9358300100EFB /* Garr201201.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Garr201201.graphml; sourceTree = "<group>"; };
+		D1ACB61918C9358300100EFB /* Geant2012.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geant2012.graphml; sourceTree = "<group>"; };
+		D1ACB61A18C9358300100EFB /* WideJpn.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WideJpn.graphml; sourceTree = "<group>"; };
+		D1ACB61D18C9358300100EFB /* 3257.r0.cch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3257.r0.cch; sourceTree = "<group>"; };
+		D1ACB61E18C9358300100EFB /* 7018.r0.cch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 7018.r0.cch; sourceTree = "<group>"; };
+		D1ACB61F18C9358300100EFB /* DeutscheTelekom.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = DeutscheTelekom.graphml; sourceTree = "<group>"; };
+		D1ACB62018C9358300100EFB /* Garr201201.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Garr201201.graphml; sourceTree = "<group>"; };
+		D1ACB62118C9358300100EFB /* Geant2012.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Geant2012.graphml; sourceTree = "<group>"; };
+		D1ACB62218C9358300100EFB /* WideJpn.graphml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WideJpn.graphml; sourceTree = "<group>"; };
+		D1ACB62418C9358300100EFB /* mergeresults.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = mergeresults.py; sourceTree = "<group>"; };
+		D1ACB62518C9358300100EFB /* ubuntusetup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ubuntusetup.sh; sourceTree = "<group>"; };
+		D1ACB62618C9358300100EFB /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		D1ACB62818C9362100100EFB /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		D1ACB62918C9362100100EFB /* __init__.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = __init__.pyc; sourceTree = "<group>"; };
+		D1ACB62A18C9362100100EFB /* algorithm.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = algorithm.py; sourceTree = "<group>"; };
+		D1ACB62B18C9362100100EFB /* algorithm.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = algorithm.pyc; sourceTree = "<group>"; };
+		D1ACB62C18C9362100100EFB /* analysis.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = analysis.py; sourceTree = "<group>"; };
+		D1ACB62D18C9362100100EFB /* analysis.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = analysis.pyc; sourceTree = "<group>"; };
+		D1ACB62E18C9362100100EFB /* cache.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cache.py; sourceTree = "<group>"; };
+		D1ACB62F18C9362100100EFB /* cache.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = cache.pyc; sourceTree = "<group>"; };
+		D1ACB63018C9362100100EFB /* config.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		D1ACB63118C9362100100EFB /* config.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = config.pyc; sourceTree = "<group>"; };
+		D1ACB63218C9362200100EFB /* distribute-0.6.49.tar.gz */ = {isa = PBXFileReference; lastKnownFileType = archive.gzip; path = "distribute-0.6.49.tar.gz"; sourceTree = "<group>"; };
+		D1ACB63318C9362200100EFB /* engine.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = engine.py; sourceTree = "<group>"; };
+		D1ACB63418C9362200100EFB /* engine.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = engine.pyc; sourceTree = "<group>"; };
+		D1ACB63518C9362200100EFB /* logging.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = logging.py; sourceTree = "<group>"; };
+		D1ACB63618C9362200100EFB /* logging.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = logging.pyc; sourceTree = "<group>"; };
+		D1ACB63718C9362200100EFB /* plot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plot.py; sourceTree = "<group>"; };
+		D1ACB63818C9362200100EFB /* plot_new.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = plot_new.py; sourceTree = "<group>"; };
+		D1ACB63918C9362200100EFB /* run.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run.py; sourceTree = "<group>"; };
+		D1ACB63A18C9362200100EFB /* run_new.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = run_new.py; sourceTree = "<group>"; };
+		D1ACB63B18C9362200100EFB /* scenario.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scenario.py; sourceTree = "<group>"; };
+		D1ACB63C18C9362200100EFB /* scenario.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = scenario.pyc; sourceTree = "<group>"; };
+		D1ACB63D18C9362200100EFB /* scenario_new.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = scenario_new.py; sourceTree = "<group>"; };
+		D1ACB63E18C9362200100EFB /* scenario_new.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = scenario_new.pyc; sourceTree = "<group>"; };
+		D1ACB63F18C9362200100EFB /* strategy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = strategy.py; sourceTree = "<group>"; };
+		D1ACB64018C9362200100EFB /* strategy.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = strategy.pyc; sourceTree = "<group>"; };
+		D1ACB64118C9362200100EFB /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		D1ACB64218C9362200100EFB /* util.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = util.pyc; sourceTree = "<group>"; };
+		D1ACB64318CA04E700100EFB /* logging.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = logging.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D1ACB5D118C9358300100EFB /* Icarus_New */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5D218C9358300100EFB /* config.py */,
+				D1ACB5D318C9358300100EFB /* doc */,
+				D1ACB5D818C9358300100EFB /* icarus */,
+				D1ACB60118C9358300100EFB /* icarus.py */,
+				D1ACB60218C9358300100EFB /* LICENSE.txt */,
+				D1ACB60318C9358300100EFB /* README.md */,
+				D1ACB60418C9358300100EFB /* reproduce-results */,
+				D1ACB61B18C9358300100EFB /* resources */,
+				D1ACB62318C9358300100EFB /* scripts */,
+				D1ACB62618C9358300100EFB /* test.py */,
+			);
+			name = Icarus_New;
+			path = ../../Icarus_New;
+			sourceTree = "<group>";
+		};
+		D1ACB5D318C9358300100EFB /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5D418C9358300100EFB /* Makefile */,
+				D1ACB5D518C9358300100EFB /* source */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		D1ACB5D518C9358300100EFB /* source */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5D618C9358300100EFB /* conf.py */,
+				D1ACB5D718C9358300100EFB /* index.rst */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		D1ACB5D818C9358300100EFB /* icarus */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5D918C9358300100EFB /* __init__.py */,
+				D1ACB5DA18C9358300100EFB /* execution */,
+				D1ACB5DF18C9358300100EFB /* models */,
+				D1ACB5E618C9358300100EFB /* orchestration.py */,
+				D1ACB5E718C9358300100EFB /* registry.py */,
+				D1ACB5E818C9358300100EFB /* results */,
+				D1ACB5EE18C9358300100EFB /* run.py */,
+				D1ACB5EF18C9358300100EFB /* scenarios */,
+				D1ACB5F518C9358300100EFB /* test */,
+				D1ACB5F718C9358300100EFB /* tools */,
+				D1ACB60018C9358300100EFB /* util.py */,
+			);
+			path = icarus;
+			sourceTree = "<group>";
+		};
+		D1ACB5DA18C9358300100EFB /* execution */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB64318CA04E700100EFB /* logging.py */,
+				D1ACB5DB18C9358300100EFB /* __init__.py */,
+				D1ACB5DC18C9358300100EFB /* collectors.py */,
+				D1ACB5DD18C9358300100EFB /* engine.py */,
+				D1ACB5DE18C9358300100EFB /* network.py */,
+			);
+			path = execution;
+			sourceTree = "<group>";
+		};
+		D1ACB5DF18C9358300100EFB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5E018C9358300100EFB /* __init__.py */,
+				D1ACB5E118C9358300100EFB /* cache.py */,
+				D1ACB5E218C9358300100EFB /* strategy.py */,
+				D1ACB5E318C9358300100EFB /* tests */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		D1ACB5E318C9358300100EFB /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5E418C9358300100EFB /* test_cache.py */,
+				D1ACB5E518C9358300100EFB /* test_strategy.py */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D1ACB5E818C9358300100EFB /* results */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5E918C9358300100EFB /* __init__.py */,
+				D1ACB5EA18C9358300100EFB /* plot.py */,
+				D1ACB5EB18C9358300100EFB /* readwrite.py */,
+				D1ACB5EC18C9358300100EFB /* tests */,
+			);
+			path = results;
+			sourceTree = "<group>";
+		};
+		D1ACB5EC18C9358300100EFB /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5ED18C9358300100EFB /* test_resultset.py */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D1ACB5EF18C9358300100EFB /* scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5F018C9358300100EFB /* __init__.py */,
+				D1ACB5F118C9358300100EFB /* cacheplacement.py */,
+				D1ACB5F218C9358300100EFB /* contentplacement.py */,
+				D1ACB5F318C9358300100EFB /* topology.py */,
+				D1ACB5F418C9358300100EFB /* workload.py */,
+			);
+			path = scenarios;
+			sourceTree = "<group>";
+		};
+		D1ACB5F518C9358300100EFB /* test */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5F618C9358300100EFB /* test_util.py */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		D1ACB5F718C9358300100EFB /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5F818C9358300100EFB /* __init__.py */,
+				D1ACB5F918C9358300100EFB /* cacheperf.py */,
+				D1ACB5FA18C9358300100EFB /* stats.py */,
+				D1ACB5FB18C9358300100EFB /* tests */,
+				D1ACB5FF18C9358300100EFB /* traces.py */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		D1ACB5FB18C9358300100EFB /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB5FC18C9358300100EFB /* test_cacheperf.py */,
+				D1ACB5FD18C9358300100EFB /* test_stats.py */,
+				D1ACB5FE18C9358300100EFB /* test_traces.py */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D1ACB60418C9358300100EFB /* reproduce-results */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB60518C9358300100EFB /* hashrouting-icn13 */,
+			);
+			path = "reproduce-results";
+			sourceTree = "<group>";
+		};
+		D1ACB60518C9358300100EFB /* hashrouting-icn13 */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB60618C9358300100EFB /* icarus */,
+				D1ACB61118C9358300100EFB /* README.md */,
+				D1ACB61218C9358300100EFB /* reproduce_results.sh */,
+				D1ACB61318C9358300100EFB /* scenarios */,
+			);
+			path = "hashrouting-icn13";
+			sourceTree = "<group>";
+		};
+		D1ACB60618C9358300100EFB /* icarus */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB60718C9358300100EFB /* __init__.py */,
+				D1ACB60818C9358300100EFB /* analysis.py */,
+				D1ACB60918C9358300100EFB /* cache.py */,
+				D1ACB60A18C9358300100EFB /* config.py */,
+				D1ACB60B18C9358300100EFB /* logging.py */,
+				D1ACB60C18C9358300100EFB /* plot.py */,
+				D1ACB60D18C9358300100EFB /* run.py */,
+				D1ACB60E18C9358300100EFB /* scenario.py */,
+				D1ACB60F18C9358300100EFB /* strategy.py */,
+				D1ACB61018C9358300100EFB /* util.py */,
+			);
+			path = icarus;
+			sourceTree = "<group>";
+		};
+		D1ACB61318C9358300100EFB /* scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB61418C9358300100EFB /* resources */,
+			);
+			path = scenarios;
+			sourceTree = "<group>";
+		};
+		D1ACB61418C9358300100EFB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB61518C9358300100EFB /* 3257.r0.cch */,
+				D1ACB61618C9358300100EFB /* 7018.r0.cch */,
+				D1ACB61718C9358300100EFB /* DeutscheTelekom.graphml */,
+				D1ACB61818C9358300100EFB /* Garr201201.graphml */,
+				D1ACB61918C9358300100EFB /* Geant2012.graphml */,
+				D1ACB61A18C9358300100EFB /* WideJpn.graphml */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D1ACB61B18C9358300100EFB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB61C18C9358300100EFB /* topologies */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		D1ACB61C18C9358300100EFB /* topologies */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB61D18C9358300100EFB /* 3257.r0.cch */,
+				D1ACB61E18C9358300100EFB /* 7018.r0.cch */,
+				D1ACB61F18C9358300100EFB /* DeutscheTelekom.graphml */,
+				D1ACB62018C9358300100EFB /* Garr201201.graphml */,
+				D1ACB62118C9358300100EFB /* Geant2012.graphml */,
+				D1ACB62218C9358300100EFB /* WideJpn.graphml */,
+			);
+			path = topologies;
+			sourceTree = "<group>";
+		};
+		D1ACB62318C9358300100EFB /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB62418C9358300100EFB /* mergeresults.py */,
+				D1ACB62518C9358300100EFB /* ubuntusetup.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		D1ACB62718C9362100100EFB /* icarus */ = {
+			isa = PBXGroup;
+			children = (
+				D1ACB62818C9362100100EFB /* __init__.py */,
+				D1ACB62918C9362100100EFB /* __init__.pyc */,
+				D1ACB62A18C9362100100EFB /* algorithm.py */,
+				D1ACB62B18C9362100100EFB /* algorithm.pyc */,
+				D1ACB62C18C9362100100EFB /* analysis.py */,
+				D1ACB62D18C9362100100EFB /* analysis.pyc */,
+				D1ACB62E18C9362100100EFB /* cache.py */,
+				D1ACB62F18C9362100100EFB /* cache.pyc */,
+				D1ACB63018C9362100100EFB /* config.py */,
+				D1ACB63118C9362100100EFB /* config.pyc */,
+				D1ACB63218C9362200100EFB /* distribute-0.6.49.tar.gz */,
+				D1ACB63318C9362200100EFB /* engine.py */,
+				D1ACB63418C9362200100EFB /* engine.pyc */,
+				D1ACB63518C9362200100EFB /* logging.py */,
+				D1ACB63618C9362200100EFB /* logging.pyc */,
+				D1ACB63718C9362200100EFB /* plot.py */,
+				D1ACB63818C9362200100EFB /* plot_new.py */,
+				D1ACB63918C9362200100EFB /* run.py */,
+				D1ACB63A18C9362200100EFB /* run_new.py */,
+				D1ACB63B18C9362200100EFB /* scenario.py */,
+				D1ACB63C18C9362200100EFB /* scenario.pyc */,
+				D1ACB63D18C9362200100EFB /* scenario_new.py */,
+				D1ACB63E18C9362200100EFB /* scenario_new.pyc */,
+				D1ACB63F18C9362200100EFB /* strategy.py */,
+				D1ACB64018C9362200100EFB /* strategy.pyc */,
+				D1ACB64118C9362200100EFB /* util.py */,
+				D1ACB64218C9362200100EFB /* util.pyc */,
+			);
+			name = icarus;
+			path = ../icarus;
+			sourceTree = "<group>";
+		};
+		D1B6DE9218B4BE4500779B9E = {
+			isa = PBXGroup;
+			children = (
+				D1ACB62718C9362100100EFB /* icarus */,
+				D1ACB5D118C9358300100EFB /* Icarus_New */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		D1B6DE9718B4BE4500779B9E /* Icarus_Proj */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = D1B6DE9A18B4BE4500779B9E /* Build configuration list for PBXLegacyTarget "Icarus_Proj" */;
+			buildPhases = (
+			);
+			buildToolPath = /opt/local/bin/python;
+			dependencies = (
+			);
+			name = Icarus_Proj;
+			passBuildSettingsInEnvironment = 1;
+			productName = Icarus_Proj;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		D1B6DE9318B4BE4500779B9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Michele Tortelli";
+			};
+			buildConfigurationList = D1B6DE9618B4BE4500779B9E /* Build configuration list for PBXProject "Icarus_Proj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D1B6DE9218B4BE4500779B9E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1B6DE9718B4BE4500779B9E /* Icarus_Proj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D1B6DE9818B4BE4500779B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D1B6DE9918B4BE4500779B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D1B6DE9B18B4BE4500779B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1B6DE9C18B4BE4500779B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1B6DE9618B4BE4500779B9E /* Build configuration list for PBXProject "Icarus_Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B6DE9818B4BE4500779B9E /* Debug */,
+				D1B6DE9918B4BE4500779B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B6DE9A18B4BE4500779B9E /* Build configuration list for PBXLegacyTarget "Icarus_Proj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B6DE9B18B4BE4500779B9E /* Debug */,
+				D1B6DE9C18B4BE4500779B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1B6DE9318B4BE4500779B9E /* Project object */;
+}
