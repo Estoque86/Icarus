@@ -88,7 +88,7 @@ def req_generator(topology, n_contents, alpha, seed, rate=12.0, duration_warmup=
     
     rate = 4.0
     warmup = 0
-    duration = 250000
+    duration = 2500000
     
     receivers = [v for v in topology.nodes_iter() if topology.node[v]['stack'][0] == 'receiver']
     zipf = ZipfDistribution(alpha, n_contents)
