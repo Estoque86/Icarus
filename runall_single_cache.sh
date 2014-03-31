@@ -5,7 +5,7 @@ runs=9
 scenarioFile=run_new.py
 infoDir=infoSim
 logDir=logs
-req=10000000
+req=100000000
 
 net=`grep '^TOPOLOGIES' icarus/config.py | awk '{print $3}' | awk -F "'" '{print $2}'`
 C=`grep '^NET_CACHE' icarus/config.py | awk '{print $3}' | awk -F '[' '{print $2}' | awk -F ']' '{print $1}'`
