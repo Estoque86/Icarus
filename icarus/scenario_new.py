@@ -130,8 +130,8 @@ def scenario_simple_test():
 
 
 
-@register_scenario_generator('LINEAR')
-def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
+@register_scenario_generator('TANDEM_CACHE')
+def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[1.0]):
     """
         Return a scenario based on GARR topology
         
@@ -147,12 +147,12 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
         alpha : float
         List of alpha of Zipf content distribution
         """
-    rate = 12.0
-    warmup = 9000
-    duration = 36000
+    rate = 4.0
+    warmup = 0
+    duration = 25000
     numnodes = 3
     
-    T = 'LINEAR' # name of the topology
+    T = 'TANDEM_CACHE' # name of the topology
     # 240 nodes in the main component
     topology = fnss.topologies.simplemodels.line_topology(numnodes)
     #topology = fnss.parse_topology_zoo(path.join(scenarios_dir, 'resources/Geant2012.graphml')).to_undirected()
@@ -166,11 +166,13 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
     receiver = nodes[0]
     
     #caches = [v for v in topology.nodes() if deg[v] > 2] # 19 nodes
-    cache = nodes[2]
+    caches = []
+    caches.append(nodes[1])
+    caches.append(nodes[2])
     
     # attach sources to topology
     #source_attachments = [v for v in topology.nodes() if deg[v] == 2] # 13 nodes
-    source_attachment = cache
+    source_attachment = caches[1]
     
     #sources = []
     #for v in source_attachments:
@@ -182,7 +184,7 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
     
     
     #routers = [v for v in topology.nodes() if v not in caches + sources + receivers]
-    router = nodes[1]
+    #router = nodes[1]
     
     # randomly allocate contents to sources
     #contents = dict([(v, []) for v in sources])
@@ -193,7 +195,7 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
     for c in range(1, n_contents + 1):
         contents[source].append(c)
     
-    #for v in sources:
+   #for v in sources:
     #    fnss.add_stack(topology, v, 'source', {'contents': contents[v]})
     #for v in receivers:
     #    fnss.add_stack(topology, v, 'receiver', {})
@@ -202,10 +204,8 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
     
     fnss.add_stack(topology, source, 'source', {'contents': contents[source]})
     fnss.add_stack(topology, receiver, 'receiver', {})
-    fnss.add_stack(topology, router, 'router', {})
-    
-    
-    
+    #fnss.add_stack(topology, router, 'router', {})
+
     # set weights and delays on all links
     fnss.set_weights_constant(topology, 1.0)
     fnss.set_delays_constant(topology, internal_link_delay, 'ms')
@@ -223,14 +223,16 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[0.6, 0.8, 1.0]):
     topology.edge[source_attachment][source]['type'] = 'external'
     fnss.set_weights_constant(topology, 1000.0, [(source_attachment, source)])
     fnss.set_delays_constant(topology, external_link_delay, 'ms', [(source_attachment, source)])
-    topology.edge[receiver][router]['type'] = 'internal'
-    topology.edge[router][cache]['type'] = 'internal'
+    topology.edge[receiver][caches[0]]['type'] = 'internal'
+    topology.edge[caches[0]][caches[1]]['type'] = 'internal'
     
     for nc in net_cache:
         #size = (float(nc)*n_contents)/len(caches) # size of a single cache
         size = (float(nc)*n_contents)
         C = str(nc)
-        fnss.add_stack(topology, cache, 'cache', {'size': size})
+        for v in caches:
+            fnss.add_stack(topology, v, 'cache', {'size': size})
+
         fnss.write_topology(topology, path.join(scenarios_dir, topo_prefix + 'T=%s@C=%s' % (T, C)  + '.xml'))
         print('[WROTE TOPOLOGY] T: %s, C: %s' % (T, C))
     
@@ -688,7 +690,7 @@ def main(argv):
     random.seed(n)
     a = arange(1,1.2,0.2)
     c = [0.01]
-    T = ['SINGLE_CACHE']
+    T = ['TANDEM_CACHE']
     for t in T:
         scenario_generator[t](net_cache=c, n_contents=100000, alpha=a)
         print(n)
