@@ -209,6 +209,7 @@ def scenario_linear(net_cache=[0.01], n_contents=100000, alpha=[1.0]):
     # set weights and delays on all links
     fnss.set_weights_constant(topology, 1.0)
     fnss.set_delays_constant(topology, internal_link_delay, 'ms')
+
     
     # label links as internal or external
     #for u, v in topology.edges():
